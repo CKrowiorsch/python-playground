@@ -5,8 +5,9 @@ RUN useradd -ms /bin/bash admin
 
 USER admin
 
-
+# deploy app
 WORKDIR /app
 COPY app /app
 
+# start flask
 CMD ["python", "service.py"]
