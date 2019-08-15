@@ -7,4 +7,4 @@ def hello():
 	
 @app.route("/user/<username>")
 def show_user(username):
-	return "{}".format(username)
+	return "Hello x{}".format(username)
