@@ -6,5 +6,5 @@ def hello():
 	return "Hello World!/n"
 	
 @app.route("/user/<username>")
-def user(username)
+def user(username):
 	return "{}".format(username)
