@@ -7,4 +7,9 @@ def hello():
 	
 @app.route("/user/<username>")
 def show_user(username):
-	return "Hello x{}".format(username)
+	return "Hello {}".format(username)
+	
+	
+if __name__ == "__main__":
+	app.run(host='0.0.0.0')
+	
